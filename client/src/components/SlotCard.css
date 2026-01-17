@@ -1,0 +1,58 @@
+.slot-card {
+  background: linear-gradient(145deg, #2c2c2c, #1a1a1a);
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  width: 220px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.slot-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.1);
+}
+
+.slot-time {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+.slot-info {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.slot-button {
+  background-color: #00bcd4;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.slot-button:hover {
+  background-color: #0199ac;
+  transform: scale(1.05);
+}
+
+.slot-button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+.slot-card.full {
+  background: linear-gradient(145deg, #3b3b3b, #1a1a1a);
+  border: 2px solid #ff4d4d;
+}
+
+.slot-card.full .slot-time {
+  color: #ff4d4d;
+}
